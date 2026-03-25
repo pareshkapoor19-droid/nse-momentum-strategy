@@ -1,6 +1,6 @@
 # **📈 NSE Market Analytics & Quantitative Momentum Strategy**
 
-**🔴 LIVE DASHBOARD:** \[Link to your Streamlit App will go here in Phase 10\]
+**🔴 LIVE DASHBOARD:** \[https://nse-momentum-strategy-kt2pvz37clnqwqeakgd4bx.streamlit.app/\]
 
 ## **📝 Project Overview**
 
@@ -40,7 +40,7 @@ This project backtests a relative momentum anomaly:
 ## **🚀 How to Run Locally**
 
 1. Clone the repository:  
-   git clone \[https://github.com/yourusername/nse-momentum-strategy.git\](https://github.com/yourusername/nse-momentum-strategy.git)
+   git clone \[[https://github.com/yourusername/nse-momentum-strategy.git\](https://github.com/yourusername/nse-momentum-strategy.git](https://github.com/pareshkapoor19-droid/nse-momentum-strategy.git))
 
 2. Navigate to the directory:  
    cd nse-momentum-strategy
