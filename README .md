@@ -44,7 +44,7 @@ This project backtests a relative momentum anomaly:
 ## **🚀 How to Run Locally**
 
 1. Clone the repository:  
-   git clone \[https://github.com/pareshkapoor19-droid/nse-momentum-strategy.git\](https://github.com/pareshkapoor19-droid/nse-momentum-strategy.git)
+   git clone \[[https://github.com/pareshkapoor19-droid/nse-momentum-strategy.git\](https://github.com/pareshkapoor19-droid/nse-momentum-strategy.git](https://github.com/pareshkapoor19-droid/nse-momentum-strategy.git))
 
 2. Navigate to the directory:  
    cd nse-momentum-strategy
