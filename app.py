@@ -111,11 +111,17 @@ if selected_stocks:
         # Quick Metrics Table
         st.markdown("### 📊 Performance Summary")
         
-        def calc_cagr(ret):
+      def calc_cagr(ret):
+            # Safety check: if there is no data, return 0
+            if len(ret) == 0: 
+                return 0.0
             return ((1 + ret).cumprod().iloc[-1] ** (252 / len(ret))) - 1
             
         def calc_sharpe(ret):
-            return ((ret.mean() * 252) - 0.065) / (ret.std() * np.sqrt(252))
+            # Safety check: prevent division by zero if volatility is 0 or data is empty
+            if len(ret) == 0 or ret.std() == 0: 
+                return 0.0
+            return ((ret.mean() * 252) - 0.065) / (ret.std() * np.sqrt(252))sqrt(252))
 
         metrics_data = {
             "Metric": ["CAGR", "Sharpe Ratio (6.5% Risk Free)"],
