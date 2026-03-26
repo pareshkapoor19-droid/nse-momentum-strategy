@@ -5,9 +5,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# ==========================================
+
 # 1. PAGE CONFIGURATION & HEADER
-# ==========================================
+
 st.set_page_config(page_title="NSE Quant Dashboard", layout="wide")
 
 st.title("📈 NSE Stock Market Analytics & Momentum Strategy")
@@ -15,9 +15,9 @@ st.title("📈 NSE Stock Market Analytics & Momentum Strategy")
 st.markdown("**Developed by: Paresh Kapoor | Aspiring Data Scientist & Quant**")
 st.markdown("---")
 
-# ==========================================
+
 # 2. SIDEBAR CONFIGURATION
-# ==========================================
+
 st.sidebar.header("⚙️ Dashboard Parameters")
 
 # Date Range Selector
@@ -31,9 +31,9 @@ available_stocks = [
 ]
 selected_stocks = st.sidebar.multiselect("Select Stocks for Universe", available_stocks, default=available_stocks[:5])
 
-# ==========================================
+
 # 3. DATA LOADING (WITH CACHING)
-# ==========================================
+
 @st.cache_data
 def load_data(tickers, start, end):
     """Downloads data from yfinance and caches it for speed."""
@@ -54,9 +54,9 @@ if selected_stocks:
     stock_returns = daily_returns.drop(columns=['^NSEI'])
     nifty_returns = daily_returns['^NSEI']
 
-    # ==========================================
+    
     # 4. TABS SETUP
-    # ==========================================
+    
     tab1, tab2, tab3 = st.tabs(["📈 Price Performance", "🛡️ Risk Metrics & Backtest", "🔥 Correlation Heatmap"])
 
     # --- TAB 1: PRICE PERFORMANCE ---
@@ -68,7 +68,7 @@ if selected_stocks:
         # Streamlit's native interactive line chart
         st.line_chart(normalized_df)
 
-    # --- TAB 2: RISK METRICS & BACKTEST ---
+    #  TAB 2: RISK METRICS & BACKTEST 
     with tab2:
         st.subheader("Top 3 Cross-Sectional Momentum vs NIFTY 50")
         
@@ -128,7 +128,7 @@ if selected_stocks:
         }
         st.table(pd.DataFrame(metrics_data).set_index("Metric"))
 
-    # --- TAB 3: CORRELATION HEATMAP ---
+    # TAB 3: CORRELATION HEATMAP 
     with tab3:
         st.subheader("Daily Returns Correlation Heatmap")
         st.markdown("Darker red means stocks move together. Darker blue means they move oppositely.")
