@@ -1,6 +1,6 @@
 # **📈 NSE Market Analytics & Quantitative Momentum Strategy**
 
-**🔴 LIVE DASHBOARD:** [https://nse-momentum-strategy-kt2pvz37clnqwqeakgd4bx.streamlit.app/](https://nse-momentum-strategy-kt2pvz37clnqwqeakgd4bx.streamlit.app/)
+**🔴 LIVE DASHBOARD:** [Click here to view the Streamlit App/](https://nse-momentum-strategy-kt2pvz37clnqwqeakgd4bx.streamlit.app/)
 
 ## **📝 Project Overview**
 
@@ -33,6 +33,7 @@ Strategy outperformed NIFTY 50 by \+2.54% CAGR
 *Note: A Sharpe ratio of 0.57 is acceptable because the backtest period includes the COVID crash of 2020\.*
 
 ### **Strategy Equity Curve vs Benchmark**
+   ![Equity Curve](hero_equity_curve.png)
 
 ## **💻 Tech Stack**
 
